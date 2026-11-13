@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Event registration form
+        </title>
+    </head>
+    <body>
+        <script>
+            document.write("<h1>Event registration</h1>");
+            let form=document.createElement("form");
+            let name=document.createElement("input");
+            name.type="text";
+            name.placeholder="Enter name";
+            form.appendChild(name);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(document.createElement("br"));
+            let email=document.createElement("input");
+            email.type="email";
+            email.placeholder="Enter email";
+            form.appendChild(email);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(document.createElement("br"));
+            let phone=document.createElement("input");
+            phone.type="tel";
+            phone.placeholder="Enter phone number";
+            form.appendChild(phone);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(document.createElement("br"));
+            let college=document.createElement("input");
+            college.type="text";
+            college.placeholder="Enter clg";
+            form.appendChild(college);
+            form.appendChild(document.createElement("br"));
+            form.appendChild(document.createElement("br"));
+            let btn=document.createElement("button");
+            btn.innerHTML="Register";
+            btn.type="Submit";
+            form.appendChild(btn);
+            document.body.appendChild(form);
+        </script>
+    </body>
+</html>
